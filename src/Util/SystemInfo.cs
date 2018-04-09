@@ -147,7 +147,7 @@ namespace log4net.Util
 			get 
 			{
 #if NETCF
--				return System.IO.Path.GetDirectoryName(SystemInfo.EntryAssemblyLocation) + System.IO.Path.DirectorySeparatorChar;
+				return System.IO.Path.GetDirectoryName(SystemInfo.EntryAssemblyLocation) + System.IO.Path.DirectorySeparatorChar;
 #elif NETSTANDARD1_3
 				return Directory.GetCurrentDirectory();
 #else
